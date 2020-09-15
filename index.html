@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> To-do List by Wulfen</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+
+    <div class="sidebar">
+<!--
+      <div class="calendar"><img src="assets/calendar.png"><input class="calendar-input" type="date">Calendar</div>
+-->
+
+      <div class="sort"><img src="assets/sort.png">
+        <div class="sort-header">Sort</div>
+        <div class="sort-options">
+          <div class="sort-priority"><img src="assets/flag.png">Priority <span id="priority-sorting"></span></div>
+          <div class="sort-alphabetical"><img src="assets/alphabet.png">Alphabetical<span
+              id="alphabetical-sorting"></span></div>
+          <div class="sort-duedate"><img src="assets/clock.png">Due Date<span id="duedate-sorting"></span></div>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-header"><img src="assets/filter.png">Filter</div>
+        <div class="filter-options">
+          <div class="filter-all"><img src="assets/all.png">View All <span id="filter-viewall"></span></div>
+          <div class="filter-priority"><img src="assets/flag.png">Priority <span id="filter-by-priority"></span></div>
+        </div>
+      </div>
+
+
+      <div class="lists">
+        <div class="lists-header"><img src="assets/lists.png">Lists</div>
+        <ul id="ul-lists"></ul>
+        <ul>
+          <li class="add-list">
+            <input class="add-list-input" type="text" placeholder="New list">
+          </li>
+        </ul>
+      </div>
+      <div class="labels"><img src="assets/tag.png">Labels
+        <div class="labels-side-container">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="main">
+      <div class="options-bar"></div>
+      <div class="list-header">Personal</div>
+
+      <div class="task-container">
+      </div>
+
+      <div class="add-task">
+        <input class="input-task" type="text" placeholder="Type your task in here.">
+        <button class="add-task-button">Go</button>
+      </div>
+    </div>
+
+
+    <div class="task-modal">
+
+      <div class="modal-header">Task</div>
+
+      <div class="labels-container">
+        <h1>LABELS</h1>
+        <div class="label-list">
+          <input class="label-input" type="text" placeholder="+ New label">
+        </div>
+      </div>
+
+      <div class="duedate-container">
+        <h1>DUE DATE</h1>
+        <input class="duedate-calendar" type="datetime-local">
+
+      </div>
+
+      <div class="priority-container">
+        <h1>PRIORITY</h1>
+        <div class="priorities">
+          <div id="low-priority"><img src="assets/files-green.png">Low</div>
+          <div id="med-priority"><img src="assets/files-yellow.png">Medium</div>
+          <div id="high-priority"><img src="assets/files-red.png">High</div>
+        </div>
+      </div>
+
+      <div class="notes-container">
+        <h1>NOTES</h1>
+        <textarea placeholder="Add your notes here"></textarea>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="blur-container">
+
+    <div class="edit-list-modal">
+      <h1>List Name</h1>
+      <input class="list-edit-input" type="text">
+      <div class="edit-list-buttons">
+        <div class="cancel-edit-list">
+          <p>Cancel</p>
+        </div>
+        <div class="save-list">
+          <p>Save</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="delete-list-modal">
+      <h1>Warning</h1>
+      <p> All tasks assigned to this list will also be deleted.</p>
+      <div class="delete-list-buttons">
+        <div class="cancel-delete-list">
+          <p>Cancel</p>
+        </div>
+        <div class="delete-list">
+          <p>Delete</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
